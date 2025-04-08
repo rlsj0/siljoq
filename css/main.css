@@ -6,3 +6,8 @@
   font-family: "Lato", sans-serif;
   font-size: 14px;
 }
+.btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}

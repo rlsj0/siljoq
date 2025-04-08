@@ -7,4 +7,10 @@
   padding: 6px;
   font-family: $font-secondary;
   font-size: $font-size-p;
+
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
 }
