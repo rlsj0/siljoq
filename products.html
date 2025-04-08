@@ -15,8 +15,13 @@
       <img class=" header__logo" src="" alt="FullColorLogo">
     </a>
     <form class="searchbar">
-      <input class="searchbar__input" placeholder="Buscar...">
-      </input>
+      <div class="searchbar__container">
+        <input class="searchbar__input" placeholder="Buscar...">
+        </input>
+        <span class="searchbar__icon">
+          <img src="./img/search.svg">
+        </span>
+      </div>
     </form>
   </header>
 
@@ -28,17 +33,13 @@
 
     <!-- Button abrir menú-->
     <button class="header__button-open">
-      <span> +
-        <!-- TODO: Meter icono hamburguesa -->
-      </span>
+      <img src="./img/menu-burger.svg">
     </button>
 
     <!-- Barra navegación (en la versión móvil es lo que se despliega)-->
     <nav class="header__nav">
       <button class="header__button-close">
-        <span> x
-          <!-- TODO: Meter icono de cerrar -->
-        </span>
+        <img src="./img/cross.svg">
       </button>
       <ul class="header__nav-list">
         <li class="header__nav-item"><a href="./index.html" class="header__nav-link">Página principal</a></li>
@@ -51,9 +52,11 @@
 
   <main>
     <div class="productbar">
-      <button class="productbar__filter-button">Filtros de búsqueda</button>
+      <button class="productbar__filter-button">Filtros de búsqueda
+        <img src="./img/add.svg">
+      </button>
       <button class="productbar__cart-button"> C
-        <!-- TODO: Meter botón carrito -->
+        <img src="./img/shopping-cart.svg">
       </button>
     </div>
 
@@ -93,7 +96,7 @@
         <div class="product-card__image-wrapper">
           <img class="product-card__image">
           <button class="product-card__buy-button"> B
-            <!-- TODO: meter botón de compra -->
+            <img src="./img/shopping-bag.svg">
           </button>
         </div>
         <div class="product-card__info">
@@ -106,7 +109,7 @@
         <div class="product-card__image-wrapper">
           <img class="product-card__image">
           <button class="product-card__buy-button"> B
-            <!-- TODO: meter botón de compra -->
+            <img src="./img/shopping-bag.svg">
           </button>
         </div>
         <div class="product-card__info">
@@ -119,7 +122,7 @@
         <div class="product-card__image-wrapper">
           <img class="product-card__image">
           <button class="product-card__buy-button"> B
-            <!-- TODO: meter botón de compra -->
+            <img src="./img/shopping-bag.svg">
           </button>
         </div>
         <div class="product-card__info">
@@ -132,7 +135,7 @@
         <div class="product-card__image-wrapper">
           <img class="product-card__image">
           <button class="product-card__buy-button"> B
-            <!-- TODO: meter botón de compra -->
+            <img src="./img/shopping-bag.svg">
           </button>
         </div>
         <div class="product-card__info">
@@ -150,7 +153,7 @@
         <!-- TODO: meter iconos -->
         <a href="#" class="footer__icon"><img src="" alt="Facebook"></a>
         <a href="#" class="footer__icon"><img src="" alt="Twitter"></a>
-        <a href="#" class="footer__icon"><img src="" alt="Instagram"></a>
+        <a href="#" class="footer__icon"><img src="./img/instagram.png" alt="Instagram"></a>
         <a href="#" class="footer__icon"><img src="" alt="LinkedIn"></a>
       </div>
     </div>
