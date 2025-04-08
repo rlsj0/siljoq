@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>sil joq</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="./index.html">
+      <!-- TODO: Meter el source de la imagen-->
+      <img class=" header__logo" src="" alt="FullColorLogo">
+    </a>
+    <form class="searchbar">
+      <div class="searchbar__container">
+        <input class="searchbar__input" placeholder="Buscar...">
+        </input>
+        <span class="searchbar__icon">
+          <img src="./img/search.svg" class="icon">
+        </span>
+      </div>
+    </form>
+  </header>
+
+  <div class="subheader">
+
+    <div class="subheader__title">
+      <h2>Página principal</h2>
+    </div>
+
+    <!-- Button abrir menú-->
+    <button class="header__button-open">
+      <img src="./img/menu-burger.svg" class="icon">
+    </button>
+
+    <!-- Barra navegación (en la versión móvil es lo que se despliega)-->
+    <nav class="header__nav">
+      <button class="header__button-close">
+        <img src="./img/cross.svg" class="icon">
+      </button>
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="./index.html" class="header__nav-link">Página principal</a></li>
+        <li class="header__nav-item"><a href="./products.html" class="header__nav-link">Productos</a></li>
+        <li class="header__nav-item"><a href="#" class="header__nav-link">FAQ</a></li>
+        <li class="header__nav-item"><a href="#" class="header__nav-link">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <section class="slider">
+      <h2 class="slider__title">Últimas novedades</h2>
+      <div class="slider__container">
+        <button class="slider__arrow slider__arrow-left">
+          <img src="./img/angle-left.svg">
+        </button>
+        <img class="slider__image" src="" alt="Última novedad">
+        <div class="slider__caption">
+          <p class="slider__caption-title">Título de la última novedad</p>
+        </div>
+        <button class="slider__arrow slider__arrow-right">
+          <img src="./img/angle-right.svg">
+        </button>
+        <p></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__social">
+      <p class="footer__social-text">Síguenos en nuestras redes</p>
+      <div class="footer__icons">
+        <!-- TODO: meter iconos -->
+        <a href="#" class="icon footer__icon"><img src="" alt="Facebook"></a>
+        <a href="#" class="icon footer__icon"><img src="" alt="Twitter"></a>
+        <a href="#" class="icon footer__icon"><img src="./img/instagram.png" alt="Instagram"></a>
+        <a href="#" class="icon footer__icon"><img src="" alt="LinkedIn"></a>
+      </div>
+    </div>
+
+    <div class="footer__newsletter">
+      <p class="footer__newsletter-title">¡Suscríbete a nuestra newsletter!</p>
+      <form class="footer__form">
+
+        <label class="footer__label">
+          <input class="footer__input" type="email" name="email" placeholder="Introduce tu correo" required>
+        </label>
+
+        <label class="footer__checkbox">
+          <input type="checkbox" name="privacidad" required>
+          Acepto la política de privacidad
+        </label>
+
+        <label class="footer__checkbox">
+          <input type="checkbox" name="terminos" required>
+          Acepto los términos y condiciones de uso
+        </label>
+
+        <button class="footer__submit" type="submit">Suscribirme</button>
+
+      </form>
+    </div>
+  </footer>
+
+</body>
+
+</html>

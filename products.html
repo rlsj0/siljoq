@@ -1,0 +1,187 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Products page</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="./index.html">
+      <!-- TODO: Meter el source de la imagen-->
+      <img class=" header__logo" src="" alt="FullColorLogo">
+    </a>
+    <form class="searchbar">
+      <div class="searchbar__container">
+        <input class="searchbar__input" placeholder="Buscar...">
+        </input>
+        <span class="searchbar__icon">
+          <img src="./img/search.svg" class="icon">
+        </span>
+      </div>
+    </form>
+  </header>
+
+  <div class="subheader">
+
+    <div class="subheader__title">
+      <h2>Productos</h2>
+    </div>
+
+    <!-- Button abrir menú-->
+    <button class="header__button-open">
+      <img src="./img/menu-burger.svg" class="icon">
+    </button>
+
+    <!-- Barra navegación (en la versión móvil es lo que se despliega)-->
+    <nav class="header__nav">
+      <button class="header__button-close">
+        <img src="./img/cross.svg" class="icon">
+      </button>
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="./index.html" class="header__nav-link">Página principal</a></li>
+        <li class="header__nav-item"><a href="./products.html" class="header__nav-link">Productos</a></li>
+        <li class="header__nav-item"><a href="#" class="header__nav-link">FAQ</a></li>
+        <li class="header__nav-item"><a href="#" class="header__nav-link">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="productbar">
+      <button class="productbar__filter-button">Filtros de búsqueda
+        <img src="./img/add.svg" class="icon">
+      </button>
+      <button class="productbar__cart-button">
+        <img src="./img/shopping-cart.svg" class="icon">
+      </button>
+    </div>
+
+    <div class="filters">
+      <form class="filters__form">
+        <div class="filters__group">
+          <p class="filters__group-title">Categoría</p>
+          <label class="filters__option">
+            <input type="checkbox" name="categoria" value="ropa">Ropa
+          </label>
+          <label class="filters__option">
+            <input type="checkbox" name="Tarjetas" value="Tarjetas">Tarjetas
+          </label>
+        </div>
+
+        <div class="filters__group">
+          <p class="filters__group--title">Precio</p>
+          <label class="filters__option">
+            <label class="filters__option">
+              <input type="radio" name="precio" value="bajo">
+              Menos de 15€
+            </label>
+            <label class="filters__option">
+              <input type="radio" name="precio" value="medio">
+              15€ – 40€
+            </label>
+            <label class="filters__option">
+              <input type="radio" name="precio" value="alto">
+              Más de 40€
+            </label>
+        </div>
+      </form>
+    </div>
+
+    <section class="product-grid">
+      <article class="product-card">
+        <div class="product-card__image-wrapper">
+          <img class="product-card__image">
+          <button class="product-card__buy-button">
+            <img src="./img/shopping-bag.svg" class="icon">
+          </button>
+        </div>
+        <div class="product-card__info">
+          <h3 class="=product-card__name">Artículo 1</h3>
+          <p class="product-card__price">15,89 €</p>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-card__image-wrapper">
+          <img class="product-card__image">
+          <button class="product-card__buy-button">
+            <img src="./img/shopping-bag.svg" class="icon">
+          </button>
+        </div>
+        <div class="product-card__info">
+          <h3 class="=product-card__name">Artículo 2</h3>
+          <p class="product-card__price">15,89 €</p>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-card__image-wrapper">
+          <img class="product-card__image">
+          <button class="product-card__buy-button">
+            <img src="./img/shopping-bag.svg" class="icon">
+          </button>
+        </div>
+        <div class="product-card__info">
+          <h3 class="=product-card__name">Artículo 3</h3>
+          <p class="product-card__price">15,89 €</p>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-card__image-wrapper">
+          <img class="product-card__image">
+          <button class="product-card__buy-button">
+            <img src="./img/shopping-bag.svg" class="icon">
+          </button>
+        </div>
+        <div class="product-card__info">
+          <h3 class="=product-card__name">Artículo 4</h3>
+          <p class="product-card__price">15,89 €</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class=" footer">
+    <div class="footer__social">
+      <p class="footer__social-text">Síguenos en nuestras redes</p>
+      <div class="footer__icons">
+        <!-- TODO: meter iconos -->
+        <a href="#" class="icon footer__icon"><img src="" alt="Facebook"></a>
+        <a href="#" class="icon footer__icon"><img src="" alt="Twitter"></a>
+        <a href="#" class="icon footer__icon"><img src="./img/instagram.png" alt="Instagram"></a>
+        <a href="#" class="icon footer__icon"><img src="" alt="LinkedIn"></a>
+      </div>
+    </div>
+
+    <div class="footer__newsletter">
+      <p class="footer__newsletter-title">¡Suscríbete a nuestra newsletter!</p>
+      <form class="footer__form">
+
+        <label class="footer__label">
+          <input class="footer__input" type="email" name="email" placeholder="Introduce tu correo" required>
+        </label>
+
+        <label class="footer__checkbox">
+          <input type="checkbox" name="privacidad" required>
+          Acepto la política de privacidad
+        </label>
+
+        <label class="footer__checkbox">
+          <input type="checkbox" name="terminos" required>
+          Acepto los términos y condiciones de uso
+        </label>
+
+        <button class="footer__submit" type="submit">Suscribirme</button>
+
+      </form>
+    </div>
+  </footer>
+
+</body>
+
+</html>
