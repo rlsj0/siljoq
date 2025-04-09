@@ -4,4 +4,58 @@ header {
   background-color: $color-secondary-white;
   margin: 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  height: 80px;
+  width: 145px;
+}
+
+.searchbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-right: 20px;
+}
+
+.searchbar__input {
+  flex: 1;
+  width: 100%;
+
+  padding: {
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 36px;
+  }
+
+  background-color: $color-yellow-light;
+  color: $color-blue-dark;
+
+  border: {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom-color: $color-primary-blue;
+    bottom-width: 2px;
+  }
+
+  font-family: $font-secondary;
+  font-size: $font-size-p;
+}
+
+.searchbar__icon {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  img {
+    width: 14px;
+    height: 14px;
+  }
 }

@@ -27,8 +27,66 @@ p {
   object-fit: contain;
 }
 
+.subheader,
+nav {
+  background-color: #047395;
+  display: flex;
+}
+.subheader h2,
+nav h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: font-primary-weight;
+  font-size: font-size-h2;
+  color: #FFFFFF;
+}
+
 header {
   background-color: #FFFFFF;
   margin: 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  height: 80px;
+  width: 145px;
+}
+
+.searchbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-right: 20px;
+}
+
+.searchbar__input {
+  flex: 1;
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-right: 36px;
+  background-color: #FFF2CC;
+  color: #012632;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-color: #41CFFA;
+  border-bottom-width: 2px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+.searchbar__icon {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.searchbar__icon img {
+  width: 14px;
+  height: 14px;
 }
