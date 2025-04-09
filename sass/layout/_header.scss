@@ -45,6 +45,10 @@ header {
 
   font-family: $font-secondary;
   font-size: $font-size-p;
+
+  &:focus-visible {
+    outline: $color-primary-blue auto 2px;
+  }
 }
 
 .searchbar__icon {
