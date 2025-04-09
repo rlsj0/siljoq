@@ -15,6 +15,7 @@ header {
 
 .searchbar__container {
   display: flex;
+  // Para que la barra de búsqueda esté en el centro del eje vertical
   align-items: center;
   justify-content: flex-start;
   position: relative;

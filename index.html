@@ -37,13 +37,18 @@
 
     <!-- Button abrir menú-->
     <button class="header__button-open">
-      <img src="./img/menu-burger.svg" class="icon">
+      <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <!-- Pegar el contenido del .svg -->
+        <rect fill="currentColor" y="10.5" width="24" height="3" />
+        <rect fill="currentColor" y="3.5" width="24" height="3" />
+        <rect fill="currentColor" y="17.5" width="24" height="3" />
+      </svg>
     </button>
 
     <!-- Barra navegación (en la versión móvil es lo que se despliega)-->
     <nav class="header__nav">
       <button class="header__button-close">
-        <img src="./img/cross.svg" class="icon">
+        <svg src="./img/cross.svg" class="icon"></svg>
       </button>
       <ul class="header__nav-list">
         <li class="header__nav-item"><a href="./index.html" class="header__nav-link">Página principal</a></li>

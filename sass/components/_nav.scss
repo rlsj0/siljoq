@@ -1,0 +1,45 @@
+@use '../base/variables' as *;
+
+.subheader,
+nav {
+  background-color: $color-blue-light;
+  width: 100vw;
+  display: flex;
+
+  h2 {
+    font-family: $font-primary;
+    font-weight: font-primary-weight;
+    font-size: font-size-h2;
+    color: $color-secondary-white;
+  }
+
+  .header__nav-list {
+    display: none;
+  }
+}
+
+.header__button-close,
+.header__button-open {
+
+  color: $color-primary-yellow;
+  background-color: $color-blue-light;
+  border-width: 2px;
+  border-color: $color-primary-yellow;
+  height: 30px;
+  width: 30px;
+  outline: none;
+  border-style: solid;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.header__button-close {
+  display: none;
+}

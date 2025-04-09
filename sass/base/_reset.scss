@@ -1,5 +1,12 @@
 @use '../base/variables' as *;
 
+*,
+*::before,
+*::after {
+  // Evitar que se desborde
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;

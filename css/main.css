@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -30,6 +36,7 @@ p {
 .subheader,
 nav {
   background-color: #047395;
+  width: 100vw;
   display: flex;
 }
 .subheader h2,
@@ -38,6 +45,34 @@ nav h2 {
   font-weight: font-primary-weight;
   font-size: font-size-h2;
   color: #FFFFFF;
+}
+.subheader .header__nav-list,
+nav .header__nav-list {
+  display: none;
+}
+
+.header__button-close,
+.header__button-open {
+  color: #FFCE38;
+  background-color: #047395;
+  border-width: 2px;
+  border-color: #FFCE38;
+  height: 30px;
+  width: 30px;
+  outline: none;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__button-close svg,
+.header__button-open svg {
+  width: 20px;
+  height: 20px;
+}
+
+.header__button-close {
+  display: none;
 }
 
 header {
