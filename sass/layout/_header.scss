@@ -1,0 +1,7 @@
+@use '../base/variables' as *;
+
+header {
+  background-color: $color-secondary-white;
+  margin: 0;
+  display: flex;
+}
