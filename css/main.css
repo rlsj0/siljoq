@@ -195,6 +195,8 @@ nav h2 {
   margin: 0 1rem;
   padding: 0 1rem 1rem 1rem;
   flex-shrink: 0;
+  max-width: 800px;
+  margin-bottom: 1rem;
 }
 .filters p {
   font-family: "Lato", sans-serif;
