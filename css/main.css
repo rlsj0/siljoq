@@ -56,6 +56,15 @@ ol {
   object-fit: contain;
 }
 
+.slider {
+  margin: 1.5rem;
+}
+.slider h2 {
+  color: #FFCE38;
+  font-size: 24px;
+  font-weight: 700;
+}
+
 .slider__container {
   position: relative;
   display: flex;
