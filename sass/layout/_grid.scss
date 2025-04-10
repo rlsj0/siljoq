@@ -1,0 +1,59 @@
+@use '../base/variables' as *;
+
+.product-grid {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.product-card__image-wrapper {
+  position: relative;
+  padding: 0px;
+  width: 150px;
+}
+
+.product-card__buy-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0px;
+}
+
+.product-card__image {
+  height: 150px;
+  width: 150px;
+}
+
+.product-card {
+  width: 150px;
+  max-width: 33%;
+}
+
+.product-card__info {
+  background-color: $color-yellow-light;
+  // TODO: corregir esto para que sea responsive y tal
+  max-width: 150px;
+  padding: 0 0.5rem;
+  border: 1px solid $color-blue-dark;
+  width: 150px;
+}
+
+.product-card__name {
+  font-family: $font-secondary;
+  font-size: 16px;
+  margin-top: 5px;
+  border-bottom: 1px solid $color-blue-dark;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
+.product-card__price {
+  margin-bottom: 2px;
+  font-family: $font-secondary;
+  font-size: 14px;
+  padding-top: 5px;
+  margin-top: 0px;
+}
