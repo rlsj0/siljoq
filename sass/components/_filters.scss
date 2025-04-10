@@ -36,3 +36,10 @@
     size: $font-size-p;
   }
 }
+
+@media only screen and (min-width: 768px) {
+
+  .filters.hidden {
+    display: block;
+  }
+}

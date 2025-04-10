@@ -243,6 +243,11 @@ nav h2 {
   font-size: 14px;
 }
 
+@media only screen and (min-width: 768px) {
+  .filters.hidden {
+    display: block;
+  }
+}
 header {
   background-color: #FFFFFF;
   margin: 0;
@@ -416,6 +421,38 @@ footer svg {
   padding: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .product-page {
+    padding: 3rem 10%;
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    row-gap: 0.5rem;
+    width: 100%;
+  }
+  .productbar {
+    display: contents;
+  }
+  .productbar__filter-button {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  .productbar__cart-button {
+    grid-column: 3/4;
+    grid-row: 1;
+    justify-self: end;
+  }
+  .filters {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  .product-grid {
+    grid-column: 2/4;
+    grid-row: 2/auto;
+    height: auto;
+  }
+}
 .product-grid {
   padding: 1rem;
   display: flex;
@@ -445,7 +482,7 @@ footer svg {
 
 .product-card {
   width: 150px;
-  max-width: 33%;
+  max-height: 250px;
 }
 
 .product-card__info {
@@ -471,4 +508,12 @@ footer svg {
   font-size: 14px;
   padding-top: 5px;
   margin-top: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .product-grid {
+    align-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 10%;
+  }
 }

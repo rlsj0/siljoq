@@ -29,12 +29,11 @@
 
 .product-card {
   width: 150px;
-  max-width: 33%;
+  max-height: 250px;
 }
 
 .product-card__info {
   background-color: $color-yellow-light;
-  // TODO: corregir esto para que sea responsive y tal
   max-width: 150px;
   padding: 0 0.5rem;
   border: 1px solid $color-blue-dark;
@@ -56,4 +55,12 @@
   font-size: 14px;
   padding-top: 5px;
   margin-top: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .product-grid {
+    align-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 10%;
+  }
 }
