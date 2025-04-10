@@ -9,11 +9,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cormorant Garamond", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
   margin-top: 0;
   padding-top: 0;
+  flex: 1;
 }
 
 p {
@@ -50,6 +54,15 @@ ol {
   width: 24px;
   height: 24px;
   object-fit: contain;
+}
+
+.slider__container {
+  height: 100px;
+  width: 100px;
+}
+.slider__container img {
+  height: 100%;
+  width: 100%;
 }
 
 .subheader {
