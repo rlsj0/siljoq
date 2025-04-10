@@ -52,3 +52,29 @@
     }
   }
 }
+
+.slider__arrow {
+  position: absolute;
+  top: 45%;
+  background-color: rgba(255, 242, 204, 0.6);
+  border: none;
+  border-radius: 50%;
+  padding: 0.75rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.slider__arrow-left {
+  left: 1rem;
+}
+
+.slider__arrow-right {
+  right: 1rem;
+}
