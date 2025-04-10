@@ -17,4 +17,21 @@ document.addEventListener("DOMContentLoaded", function() {
     subheader.classList.remove("hidden");
     subheader.classList.add("active");
   })
+
+  const checkboxes = document.querySelectorAll(".footer__checkbox input");
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", function() {
+      // Del input paso al hermano (.footer__checkbox-icon), de ahí al
+      // primer hijo (el svg) y de ahí al último hijo (la línea del check)
+      const checkboxIcon = checkbox.nextElementSibling;
+      const svg = checkboxIcon.firstElementChild;
+      const checkLine = svg.lastElementChild;
+
+      if (this.checked) {
+        checkLine.style.opacity = "1";
+      } else {
+        checkLine.style.opacity = "0";
+      }
+    })
+  })
 });
