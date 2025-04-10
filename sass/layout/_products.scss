@@ -3,7 +3,30 @@
 .productbar {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   justify-content: space-between;
+  margin-bottom: 0;
   width: 100vw;
+
+  &__filter-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 1rem;
+    margin-bottom: 0;
+
+    img {
+      margin-left: 1rem;
+    }
+  }
+
+  btn {
+    margin-bottom: 0;
+  }
+}
+
+.product-page {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }

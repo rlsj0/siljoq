@@ -34,4 +34,18 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     })
   })
+
+  const filterButton = document.querySelector(".productbar__filter-button");
+  const filters = document.querySelector(".filters");
+
+  filterButton.addEventListener("click", () => {
+    if (filters.classList.contains("hidden")) {
+      filters.classList.remove("hidden");
+      filters.classList.add("active");
+    } else {
+      filters.classList.remove("active");
+      filters.classList.add("hidden");
+    }
+  })
+
 });
