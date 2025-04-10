@@ -20,6 +20,24 @@ p {
   font-family: "Lato", sans-serif;
 }
 
+a {
+  color: inherit;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
 .btn {
   background-color: #FFCE38;
   border-width: 2px;
@@ -57,6 +75,9 @@ nav h2 {
   align-items: center;
   padding: 0 1rem;
 }
+.subheader__top.hidden {
+  display: none;
+}
 
 .subheader__button-close,
 .subheader__button-open {
@@ -79,11 +100,20 @@ nav h2 {
 }
 
 .subheader__button-close {
-  display: none;
+  margin-top: 20px;
 }
 
 .subheader__nav {
   display: none;
+}
+.subheader__nav.active {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+#this-page {
+  text-decoration: underline;
 }
 
 header {

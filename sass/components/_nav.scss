@@ -22,6 +22,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
+
+  &.hidden {
+    display: none;
+  }
 }
 
 .subheader__button-close,
@@ -40,6 +44,7 @@ nav {
   align-items: center;
   justify-content: center;
 
+
   svg {
     width: 20px;
     height: 20px;
@@ -47,9 +52,19 @@ nav {
 }
 
 .subheader__button-close {
-  display: none;
+  margin-top: 20px;
 }
 
 .subheader__nav {
   display: none;
+
+  &.active {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+}
+
+#this-page {
+  text-decoration: underline;
 }

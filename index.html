@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
 
   <div class="subheader">
 
-    <div class="subheader__top">
+    <div class="subheader__top active">
       <div class="subheader__title">
         <h2>Página principal</h2>
       </div>
@@ -48,16 +49,28 @@
     </div>
 
     <!-- Barra navegación (en la versión móvil es lo que se despliega)-->
-    <nav class="subheader__nav">
-      <button class="subheader__button-close">
-        <svg src="./img/cross.svg" class="icon"></svg>
-      </button>
+    <nav class="subheader__nav hidden">
       <ul class="subheader__nav-list">
-        <li class="subheader__nav-item"><a href="./index.html" class="header__nav-link">Página principal</a></li>
-        <li class="subheader__nav-item"><a href="./products.html" class="header__nav-link">Productos</a></li>
-        <li class="subheader__nav-item"><a href="#" class="header__nav-link">FAQ</a></li>
-        <li class="subheader__nav-item"><a href="#" class="header__nav-link">Sobre nosotros</a></li>
+        <li class="subheader__nav-item"><a href="./index.html" class="header__nav-link">
+            <h2 id="this-page">Página principal</h2>
+          </a></li>
+        <li class="subheader__nav-item"><a href="./products.html" class="header__nav-link">
+            <h2>Productos</h2>
+          </a></li>
+        <li class="subheader__nav-item"><a href="#" class="header__nav-link">
+            <h2>FAQ</h2>
+          </a></li>
+        <li class="subheader__nav-item"><a href="#" class="header__nav-link">
+            <h2>Sobre nosotros</h2>
+          </a></li>
       </ul>
+      <button class="subheader__button-close">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="512" height="512"
+          fill="currentColor">
+          <polygon
+            points="24.061 2.061 21.939 -0.061 12 9.879 2.061 -0.061 -0.061 2.061 9.879 12 -0.061 21.939 2.061 24.061 12 14.121 21.939 24.061 24.061 21.939 14.121 12 24.061 2.061" />
+        </svg>
+      </button>
     </nav>
   </div>
 
