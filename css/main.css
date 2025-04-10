@@ -42,6 +42,11 @@ ol {
   margin: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  main {
+    padding: 2rem 10%;
+  }
+}
 .btn {
   background-color: #FFCE38;
   border-width: 2px;
