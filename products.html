@@ -31,30 +31,32 @@
 
   <div class="subheader">
 
-    <div class="subheader__title">
-      <h2>Página principal</h2>
+    <div class="subheader__top">
+      <div class="subheader__title">
+        <h2>Productos</h2>
+      </div>
+
+      <!-- Button abrir menú-->
+      <button class="subheader__button-open">
+        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <!-- Pegar el contenido del .svg -->
+          <rect fill="currentColor" y="10.5" width="24" height="3" />
+          <rect fill="currentColor" y="3.5" width="24" height="3" />
+          <rect fill="currentColor" y="17.5" width="24" height="3" />
+        </svg>
+      </button>
     </div>
 
-    <!-- Button abrir menú-->
-    <button class="header__button-open">
-      <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <!-- Pegar el contenido del .svg -->
-        <rect fill="currentColor" y="10.5" width="24" height="3" />
-        <rect fill="currentColor" y="3.5" width="24" height="3" />
-        <rect fill="currentColor" y="17.5" width="24" height="3" />
-      </svg>
-    </button>
-
     <!-- Barra navegación (en la versión móvil es lo que se despliega)-->
-    <nav class="header__nav">
-      <button class="header__button-close">
+    <nav class="subheader__nav">
+      <button class="subheader__button-close">
         <svg src="./img/cross.svg" class="icon"></svg>
       </button>
-      <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="./index.html" class="header__nav-link">Página principal</a></li>
-        <li class="header__nav-item"><a href="./products.html" class="header__nav-link">Productos</a></li>
-        <li class="header__nav-item"><a href="#" class="header__nav-link">FAQ</a></li>
-        <li class="header__nav-item"><a href="#" class="header__nav-link">Sobre nosotros</a></li>
+      <ul class="subheader__nav-list">
+        <li class="subheader__nav-item"><a href="./index.html" class="header__nav-link">Página principal</a></li>
+        <li class="subheader__nav-item"><a href="./products.html" class="header__nav-link">Productos</a></li>
+        <li class="subheader__nav-item"><a href="#" class="header__nav-link">FAQ</a></li>
+        <li class="subheader__nav-item"><a href="#" class="header__nav-link">Sobre nosotros</a></li>
       </ul>
     </nav>
   </div>

@@ -1,10 +1,13 @@
 @use '../base/variables' as *;
 
+.subheader {
+  padding: 0;
+}
+
 .subheader,
 nav {
   background-color: $color-blue-light;
   width: 100vw;
-  display: flex;
 
   h2 {
     font-family: $font-primary;
@@ -12,14 +15,17 @@ nav {
     font-size: font-size-h2;
     color: $color-secondary-white;
   }
-
-  .header__nav-list {
-    display: none;
-  }
 }
 
-.header__button-close,
-.header__button-open {
+.subheader__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.subheader__button-close,
+.subheader__button-open {
 
   color: $color-primary-yellow;
   background-color: $color-blue-light;
@@ -40,6 +46,10 @@ nav {
   }
 }
 
-.header__button-close {
+.subheader__button-close {
+  display: none;
+}
+
+.subheader__nav {
   display: none;
 }
