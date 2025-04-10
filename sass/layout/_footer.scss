@@ -69,3 +69,15 @@ footer {
 .footer__checkbox-check {
   opacity: 0;
 }
+
+.footer__submit {
+  margin-right: 2rem;
+  padding: 0.6rem;
+  align-self: start;
+  color: $color-blue-dark;
+
+  font: {
+    family: $font-secondary;
+    size: $font-size-p;
+  }
+}
