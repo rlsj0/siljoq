@@ -64,3 +64,15 @@ header {
     height: 14px;
   }
 }
+
+@media only screen and (min-width: 768px) {
+
+  .header__logo {
+    margin-left: 6rem;
+  }
+
+  .searchbar__container {
+    margin-right: 6rem;
+    width: 20rem;
+  }
+}
