@@ -1,0 +1,9 @@
+@use '../base/variables' as *;
+
+.productbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+  width: 100vw;
+}

@@ -317,3 +317,11 @@ footer svg {
   font-family: "Lato", sans-serif;
   font-size: 14px;
 }
+
+.productbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+  width: 100vw;
+}
