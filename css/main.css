@@ -57,12 +57,18 @@ ol {
 }
 
 .slider__container {
-  height: 100px;
-  width: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 1rem;
 }
 .slider__container img {
-  height: 100%;
   width: 100%;
+  max-width: 800px;
+  height: auto;
 }
 
 .subheader {
