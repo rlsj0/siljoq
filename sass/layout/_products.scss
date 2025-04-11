@@ -1,0 +1,72 @@
+@use '../base/variables' as *;
+
+.productbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem 0 1rem;
+  justify-content: space-between;
+  margin-bottom: 0;
+  width: 100vw;
+
+  &__filter-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 1rem;
+    margin-bottom: 0;
+
+    img {
+      margin-left: 1rem;
+    }
+  }
+
+  btn {
+    margin-bottom: 0;
+  }
+}
+
+.product-page {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .product-page {
+    padding: 3rem 10%;
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    row-gap: 0.5rem;
+    width: 100%;
+  }
+
+  .productbar {
+    // Necesario para que se muestre directamente sus hijos en el grid
+    // Mirar: https://caniuse.com/css-display-contents
+    display: contents;
+  }
+
+  .productbar__filter-button {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .productbar__cart-button {
+    grid-column: 3/4;
+    grid-row: 1;
+    justify-self: end;
+  }
+
+  .filters {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+
+  .product-grid {
+    grid-column: 2/4;
+    grid-row: 2 / auto;
+    height: auto;
+  }
+}

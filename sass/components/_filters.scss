@@ -1,0 +1,45 @@
+@use '../base/_variables.scss' as *;
+
+.filters {
+  left: 1rem;
+  background-color: $color-primary-yellow;
+  margin: 0 1rem;
+  padding: 0 1rem 1rem 1rem;
+  flex-shrink: 0;
+  max-width: 800px;
+  margin-bottom: 1rem;
+
+  p {
+    font: {
+      family: $font-secondary;
+      size: $font-size-p;
+      weight: bold;
+    }
+  }
+}
+
+.filters.hidden {
+  display: none;
+}
+
+.filters__form {
+  margin: 0;
+  padding: 0;
+}
+
+.filters__option {
+  display: flex;
+  direction: column;
+
+  font: {
+    family: $font-secondary;
+    size: $font-size-p;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .filters.hidden {
+    display: block;
+  }
+}

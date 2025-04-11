@@ -1,0 +1,80 @@
+@use '../base/variables' as *;
+
+.slider {
+  margin: 1.5rem;
+
+  h2 {
+    color: $color-primary-yellow;
+
+    font: {
+      size: $font-size-h2;
+      weight: $font-primary-weight;
+    }
+  }
+}
+
+.slider__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+
+  img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+}
+
+.slider__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $color-blue-light;
+  padding: 0;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 8px;
+  border-width: 0;
+
+  &-title {
+    color: white;
+    margin: 0;
+
+    font: {
+      family: $font-secondary;
+      size: $font-size-p;
+    }
+  }
+}
+
+.slider__arrow {
+  position: absolute;
+  top: 45%;
+  background-color: rgba(255, 242, 204, 0.6);
+  border: none;
+  border-radius: 50%;
+  padding: 0.75rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.slider__arrow-left {
+  left: 1rem;
+}
+
+.slider__arrow-right {
+  right: 1rem;
+}
